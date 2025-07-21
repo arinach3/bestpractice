@@ -8,6 +8,7 @@ export default function RecipeBook(){
             <SideBar />
             <div class="content">
                 <h1>Welcome to your cookbook</h1>
+
             </div>
             
         </div>

@@ -5,9 +5,10 @@
 
 .content{
     flex: 1;
-    padding: 2rem;
-    background-color: #ecf0f1;
+    padding: 30px;
+    background-color: #fdfdfd;
 }
+
 
 h1{
     text-align: center;

@@ -10,18 +10,18 @@ h2 {
   margin-bottom: 10px;
 }
 
-ul {
+.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+.sidebar li {
   margin: 15px;
   padding: 10px;
 
 }
 
-li:hover {
+.sidebar li:hover {
       background-color:  #29293d;
 }
 
