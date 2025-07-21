@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 import SideBar from './SideBar';
-import "./RecipeBook.css";
+import "./RecipeBook.css"
 
-export default function RecipeBook(){
+export default function ChocolatePie(){
+    const active = "chocolatePie"
     return(
         <div class="book">
-            <SideBar />
+            <SideBar active={active} />
             <div class="content">
-                <h1>Welcome to your cookbook</h1>
+                <h1>Chocolate Pie</h1>
             </div>
-            
         </div>
     )
 }
