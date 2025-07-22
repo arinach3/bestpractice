@@ -11,7 +11,7 @@ export default function SideBar({ active }){
       <h2>Choose a recipe</h2>
       <ul>
         <li class={active === "creampuffs" ? "selected" : ""}><a  href="/creampuffs">Creampuffs</a></li>
-        <li class={active === "chocolatePie" ? "selected" : ""}><a href="/chocolatePie">Chocolate pie</a></li>
+        <li class={active === "chocolatepie" ? "selected" : ""}><a href="/chocolatePie">Chocolate pie</a></li>
       </ul>
     </div>
     )
