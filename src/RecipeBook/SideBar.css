@@ -18,11 +18,13 @@ h2 {
 .sidebar li {
   margin: 15px;
   padding: 10px;
+  list-style: none;
 
 }
 
 .sidebar li:hover {
       background-color:  #29293d;
+
 }
 
 a {

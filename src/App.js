@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from "./RecipeBook/Home";
 import About from './RecipeBook/About';
 import RecipeBook from './RecipeBook/RecipeBook';
-import Creampuff from './RecipeBook/Creampuff';
-import ChocolatePie from './RecipeBook/ChocolatePie';
+import recipes from './RecipeBook/Recipes';
+import RecipePage from './RecipeBook/RecipePage';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
         <div>
           {/* Navigation */}
           <nav>
-            <Link to="/"><button class="headerButton">Home</button></Link>
-            <Link to="/about"><button class="headerButton">About</button></Link>
-            <Link to="/RecipeBook"><button class="headerButton">Recipe Book</button></Link>
+            <Link to="/"><button className="headerButton">Home</button></Link>
+            <Link to="/about"><button className="headerButton">About</button></Link>
+            <Link to="/RecipeBook"><button className="headerButton">Recipe Book</button></Link>
           </nav>
 
           {/* Routes */}
@@ -25,8 +25,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/RecipeBook" element={<RecipeBook />} />
-            <Route path="/creampuffs" element={<Creampuff />} />
-            <Route path="/chocolatepie" element={<ChocolatePie />} />
+            <Route path="/recipes/:id" element={<RecipePage />} />
+            
           </Routes>
         </div>
       </Router>
