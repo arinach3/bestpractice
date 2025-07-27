@@ -9,6 +9,7 @@ import "./RecipeBook.css";
 export default function RecipePage(){
     const { id } = useParams();
     const recipe = recipes.find((r) => r.id === id);
+    
     const [favorite, setFavorite] = useState(() => {
     const stored = localStorage.getItem('favorites');
     return stored ? JSON.parse(stored) : [];

@@ -17,6 +17,7 @@ export default function SideBar({ active }){
             <Link to={`/recipes/${recipe.id}`} key={recipe.id}>
           <li class={`${recipe.id}` === id ? "selected" : ""}>{recipe.title}</li>
         </Link>))}
+        <Link to="/favorites">Favorites</Link>
     </div>
     )
 }
