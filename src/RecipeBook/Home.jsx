@@ -9,8 +9,12 @@ export default function Home(){
     console.log(filteredRecipes);
     return(
         <div>
-            <p>Home page</p>
-            <input type="text" placeholder='Search for a recipe' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+            <h4>Search for a recipe here</h4>
+            <input type="text" placeholder='enter recipe name' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+            {filteredRecipes.length === 0 ? (
+            <p>No recipe found</p>
+            ):(
+        
             <ul>
                 {filteredRecipes.map(recipe => (
                     <li key={recipe.id}>
@@ -20,6 +24,7 @@ export default function Home(){
                     </li>
                 ))}
             </ul>
+            )}
         </div>
     )
 }
