@@ -2,24 +2,24 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "main": "App.js",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "big-integer": "^1.6.52",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.0",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.18",
-    "swap-case": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +39,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jest": "^27.5.1",
+    "npx": "^10.2.2",
+    "tsx": "^4.20.3",
+    "vite": "^7.0.6",
+    "vitest": "^3.2.4"
   }
 }

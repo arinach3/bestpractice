@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import recipes from './Recipes';
-import SideBar from './SideBar';
+import recipes from './Recipes.jsx';
+import SideBar from './SideBar.jsx';
 import "./Ingredients.css";
 import "./RecipeBook.css";
 
@@ -22,8 +22,10 @@ export default function RecipePage(){
     const toggleFavorite = (id) => {
         if(favorite.includes(id)) {
             setFavorite(favorite.filter(favId => favId !== id));
+            console.info("favorite was removed");
         }else {
             setFavorite([...favorite, id]);
+            console.info("favorite was added")
         }
     };
 

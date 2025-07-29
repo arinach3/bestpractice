@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import SideBar from './SideBar';
+import SideBar from './SideBar.jsx';
 import "./RecipeBook.css";
 
 export default function RecipeBook(){

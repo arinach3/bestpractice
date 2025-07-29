@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Link } from 'react-router-dom';
 
-import recipes from './Recipes';
-import SideBar from './SideBar';
+import recipes from './Recipes.jsx';
+import SideBar from './SideBar.jsx';
 
 
 export default function Favorites(){

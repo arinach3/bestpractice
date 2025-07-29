@@ -1,12 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from "./RecipeBook/Home";
-import About from './RecipeBook/About';
-import RecipeBook from './RecipeBook/RecipeBook';
-import recipes from './RecipeBook/Recipes';
-import RecipePage from './RecipeBook/RecipePage';
-import Favorites from './RecipeBook/Favorites';
+import Home from "./RecipeBook/Home.jsx";
+import About from './RecipeBook/About.jsx';
+import RecipeBook from './RecipeBook/RecipeBook.jsx';
+import RecipePage from './RecipeBook/RecipePage.jsx';
+import Favorites from './RecipeBook/Favorites.jsx';
 
 function App() {
   return (
