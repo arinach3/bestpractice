@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link } from 'react-router-dom';
 import recipes from './Recipes';
 
+
 export default function Home(){
     const [searchTerm, setSearchTerm] = useState("");
     const filteredRecipes = recipes.filter(recipe => recipe.title.toLowerCase().includes(searchTerm.toLowerCase()));
