@@ -7,7 +7,6 @@ const getStoredFavorites = () => {
   const raw = localStorage.getItem('favorites');
   return raw ? JSON.parse(raw) : [];
 };
-
 beforeAll(() => {
   if (typeof global.localStorage === 'undefined') {
     let store = {};
@@ -32,28 +31,28 @@ beforeEach(() => {
 
 test('initially shows "Add to favorites" when not in localStorage', () => {
   render(<FavoriteButton recipeId="pancakes" />);
-  const button = screen.getByRole('button', { name: /add to favorites/i });
+  const button = screen.getByRole('button', { name: 'favorite-toggle' });
   expect(button).toBeInTheDocument();
   expect(getStoredFavorites()).toEqual([]);
 });
 
 test('clicking adds to favorites and updates label', () => {
   render(<FavoriteButton recipeId="pancakes" />);
-  const button = screen.getByRole('button', { name: /add to favorites/i });
+  const button = screen.getByRole('button', { name: 'favorite-toggle'  });
 
   fireEvent.click(button);
 
-  expect(button).toHaveTextContent(/remove from favorites/i);
+  expect(button).toHaveTextContent('💔 Remove from favorites');
   expect(getStoredFavorites()).toContain('pancakes');
 });
 
 test('clicking again removes from favorites', () => {
   localStorage.setItem('favorites', JSON.stringify(['pancakes']));
   render(<FavoriteButton recipeId="pancakes" />);
-  const button = screen.getByRole('button', { name: /remove from favorites/i });
+  const button = screen.getByRole('button', { name: 'favorite-toggle' });
 
   fireEvent.click(button);
 
-  expect(button).toHaveTextContent(/add to favorites/i);
+  expect(button).toHaveTextContent('💜 Add to favorites');
   expect(getStoredFavorites()).not.toContain('pancakes');
 });
