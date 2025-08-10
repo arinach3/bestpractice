@@ -10,7 +10,7 @@ export default function RecipeBook(){
         <div class="book">
             <SideBar />
             <div class="content">
-                <h1>Welcome to your cookbook</h1>
+                <h1>Welcome to the cookbook</h1>
 
 
             </div>

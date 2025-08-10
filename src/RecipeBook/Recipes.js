@@ -12,7 +12,15 @@ const recipes = [
     description: 'Perfect for breakfast.',
     ingredients: ['Flour', 'Eggs', 'Milk', 'Baking powder'],
     instructions: ['Mix ingredients.', 'Cook on griddle until golden.']
+  },
+  {
+    id: 'chocolatePie',
+    title: 'Chocolate Pie',
+    description: 'Crispy pie shell with a chocolatey, velvety filling',
+    ingredients: ['Flour', 'Eggs', 'Powdered sugar', 'Vanilla', 'Chocolate'],
+    instructions: ['Make pie crust', 'Make pie filling', 'Bake']
   }
+  
 ];
 
 export default recipes;
