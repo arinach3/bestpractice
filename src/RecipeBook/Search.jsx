@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
-import {Link } from 'react-router-dom';
 import recipes from './Recipes';
 
+export function filterRecipes(recipes, searchTerm) {
+  return recipes.filter(r =>
+    r.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+}
 
-
-export default function Home(){
+export default function Search(){
     const [searchTerm, setSearchTerm] = useState("");
     const filteredRecipes = recipes.filter(recipe => recipe.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
@@ -20,9 +23,7 @@ export default function Home(){
             <ul>
                 {filteredRecipes.map(recipe => (
                     <li key={recipe.id}>
-                        <Link to={`/recipes/${recipe.id}`}>
                         <h3>{recipe.title}</h3>
-                        </Link>
                     </li>
                 ))}
             </ul>

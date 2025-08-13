@@ -6,6 +6,7 @@ import About from './RecipeBook/About';
 import RecipeBook from './RecipeBook/RecipeBook';
 import recipes from './RecipeBook/Recipes';
 import RecipePage from './RecipeBook/RecipePage';
+import Favorites from './RecipeBook/Favorites';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/RecipeBook" element={<RecipeBook />} />
             <Route path="/recipes/:id" element={<RecipePage />} />
+            <Route path="/favorites" element={<Favorites />} />
             
           </Routes>
         </div>
