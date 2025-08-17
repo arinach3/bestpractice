@@ -6,13 +6,10 @@
   "main": "App.js",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
-<<<<<<< HEAD
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
-=======
     "big-integer": "^1.6.52",
->>>>>>> bf8b9a69f2de34c439e8cce9ef8b2f9b654d57bd
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.0",
@@ -45,7 +42,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@babel/core": "^7.28.0",
     "@babel/node": "^7.28.0",
     "@babel/preset-react": "^7.27.1",
@@ -53,13 +49,11 @@
     "npx": "^10.2.2",
     "tsx": "^4.20.3",
     "vite": "^7.0.6",
-    "vitest": "^3.2.4"
-=======
+    "vitest": "^3.2.4",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "babel-jest": "^30.0.5",
     "jest": "^27.5.1"
->>>>>>> bf8b9a69f2de34c439e8cce9ef8b2f9b654d57bd
   }
 }
